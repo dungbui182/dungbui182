@@ -1,0 +1,447 @@
+@charset "utf-8";
+/* CSS Document */
+
+#div2 {
+  background-color: black;
+  box-shadow: #dfdfdf 0px 2px 8px 1px;
+  color: white;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  z-index: 999;
+  align-items: center;
+}
+body {
+  margin: 0;
+}
+a {
+  color: black;
+}
+
+a:link {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+}
+#div2 a {
+  font-size: 50px;
+  color: white;
+}
+#div2 h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+div#div2 > a {
+  text-decoration: none;
+}
+
+.banner {
+  width: 100%;
+  height: 630px;
+}
+.banner > img {
+  width: 100%;
+  height: 80%;
+}
+.banner > h1 {
+  margin: 30px 0px 0px 0px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+.search-child > li:hover {
+  background-color: rgb(209, 182, 72);
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0;
+  list-style-type: none;
+}
+.search > li {
+  margin-left: 50px;
+}
+.search > li > a {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.search-child {
+  background-color: white;
+  width: 150px;
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: 999;
+  transition: opacity 1.3s;
+}
+.search > li:hover .search-child {
+  opacity: 1;
+}
+.search-child > li {
+  font-size: 19px;
+  font-style: italic;
+}
+
+.cards {
+  width: 90%;
+  margin: 0 0 0 65px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: rgba(116, 116, 130, 0.2) 0px 7px 29px 10px;
+  width: calc(25% - 25px);
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.zoom {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  border-bottom: 1px solid darkslategrey;
+}
+.card-image:hover {
+  transform: scale(1.45);
+}
+img.card-image.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.zoom:hover img {
+  opacity: 0;
+}
+.zoom:hover img.card-image.hover {
+  transition: opacity 0.9s ease-in-out;
+  opacity: 1;
+}
+
+.content-notice {
+  position: absolute;
+  font-size: 20px;
+  right: 2px;
+  bottom: 2px;
+  border: 1px solid black;
+  border: rgb(154, 0, 0);
+  border-style: ridge;
+  border-radius: 13px 0px;
+  animation: doimau2 1s ease infinite;
+}
+@keyframes doimau2 {
+  0% {
+    background-color: rgb(171, 5, 5);
+  }
+  25% {
+    background-color: rgb(72, 194, 10);
+  }
+  50% {
+    background-color: rgb(16, 213, 243);
+  }
+  75% {
+    background-color: rgb(35, 7, 147);
+  }
+  100% {
+    background-color: rgb(255, 0, 208);
+  }
+}
+.card-content {
+  text-align: center;
+}
+.card-content > a {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+.location {
+  width: 100%;
+  height: 120px;
+  background-color: black;
+}
+.location h1,
+h4 {
+  padding: 10px 0px;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+.location h4 {
+  border: white 1px solid;
+  border-radius: 15px;
+}
+.location h4:hover {
+  background-color: white;
+  color: black;
+}
+
+.poster {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #eeeeee;
+  color: black;
+  height: 580px;
+  padding: 30px 60px;
+}
+.poster i {
+  font-size: 36px;
+}
+.delivery {
+  width: 22%;
+  padding: 40px;
+}
+.change {
+  width: 22%;
+  padding: 50px;
+}
+.material {
+  width: 22%;
+  padding: 40px;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.information {
+  list-style-type: none;
+  display: inline;
+}
+.pay > ul > li {
+  padding-right: 40px;
+  list-style-type: none;
+}
+.pay {
+  display: flex;
+  justify-content: center;
+  background-color: #eeeeee;
+  color: black;
+}
+.pay i {
+  font-size: 36px;
+}
+.pay > p {
+  margin: 15px;
+}
+.copy {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+  height: 60px;
+  align-items: center;
+}
+
+#goTop {
+  position: fixed;
+  right: 15px;
+  bottom: 90px;
+  z-index: 999;
+}
+#goTop i {
+  font-size: 60px;
+}
+#goBottom i {
+  font-size: 60px;
+}
+#goBottom {
+  position: fixed;
+  right: 15px;
+  bottom: 25px;
+  z-index: 999;
+}
+
+.menu-ads {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#ads {
+  position: fixed;
+  left: 15px;
+  bottom: 20px;
+  z-index: 999;
+}
+
+#ads:hover .menu-ads > li {
+  transform: scale(1.1);
+}
+
+/*mobile*/
+@media screen and (max-width: 600px) {
+  #div2 h1 {
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+  }
+  #div2 a {
+    font-size: 25px;
+    padding: 10px 0;
+  }
+  .banner {
+    width: 100%;
+    height: 350px;
+  }
+  .banner h1 {
+    margin: 20px 0;
+  }
+  .banner > img {
+    margin-top: 40px;
+    width: 100%;
+    height: 70%;
+  }
+  .search {
+    padding-left: 80px;
+  }
+  .search > li > a {
+    font-size: 15px;
+  }
+  .search > li {
+    margin-left: 15px;
+  }
+  .search-child > li {
+    font-size: 15px;
+  }
+  .cards {
+    margin: 0 auto;
+  }
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .poster {
+    display: block;
+    padding: 10px 10px;
+    height: 100%;
+    font-size: 5px;
+  }
+  .poster i {
+    font-size: 15px;
+  }
+  .poster h1,
+  h3,
+  h5 {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  .delivery {
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+  }
+  .change {
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+  }
+  .material {
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+  }
+  .contact {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .information p {
+    font-size: 10px;
+  }
+  .pay i {
+    font-size: 15px;
+  }
+  .menu-ads li a img {
+    width: 70%;
+  }
+  #goTop {
+    right: 5px;
+    bottom: 60px;
+  }
+  #goBottom {
+    right: 5px;
+  }
+  #goTop i {
+    font-size: 33px;
+  }
+  #goBottom i {
+    font-size: 33px;
+  }
+}
+
+/*ipad*/
+@media screen and (max-width: 900px) {
+  .banner {
+    width: 100%;
+    height: 330px;
+  }
+  .search {
+    padding-left: 100px;
+    margin: 40px auto;
+  }
+  .search > li > a {
+    font-size: 18px;
+  }
+  .search > li {
+    margin-left: 18px;
+  }
+  .search-child > li {
+    font-size: 17px;
+  }
+  .cards {
+    margin: 0 auto;
+  }
+  .card {
+    width: calc(49% - 25px);
+    margin: 10px auto;
+  }
+  .poster {
+    display: flex;
+    padding: 10px 10px;
+    height: 100%;
+    font-size: 15px;
+  }
+  .poster i {
+    font-size: 20px;
+  }
+  .poster h1,
+  h3,
+  h5 {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .material {
+    padding: 25px;
+  }
+  .change {
+    padding: 25px;
+  }
+  .delivery {
+    padding: 25px;
+  }
+}

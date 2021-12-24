@@ -1,0 +1,602 @@
+#div1 {
+  background-color: black;
+  color: #ffffff;
+  box-shadow: #e7e7e7 0px 2px 8px 1px;
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  z-index: 999;
+}
+body {
+  margin-top: 0;
+  margin-left: 0;
+}
+li a {
+  color: black;
+}
+a:link {
+  color: black;
+}
+#div1 a {
+  font-size: 50px;
+  color: white;
+}
+
+.top-nav {
+  background-color: #eeeeee;
+}
+.col {
+  font-size: 28px;
+}
+.top-nav-logo {
+  width: 100%;
+  height: 70%;
+}
+.top-nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 20px;
+}
+.top-nav-menu > li {
+  margin: 40px;
+}
+.top-nav-menu > li a {
+  color: black;
+}
+.product > li > a {
+  color: black;
+  font-size: 21px;
+}
+.product {
+  list-style-type: none;
+  width: 155px;
+  box-shadow: #040c2c 0px 10px 25px 0px;
+  background-color: #eeeeee;
+  border-radius: 12px;
+  padding-left: 3px;
+  position: absolute;
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.top-nav-menu > li:hover .product {
+  opacity: 1;
+}
+.menu-cart {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(98, 97, 97, 0.5);
+  left: -20%;
+  top: 5%;
+  right: 0%;
+  list-style-type: none;
+  z-index: 9999;
+}
+.contact-cart {
+  font-size: 28px;
+  color: white;
+}
+#cancel {
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.items {
+  width: 40%;
+}
+.items img {
+  width: 100%;
+  border-radius: 20px;
+}
+.zoom {
+  overflow: hidden;
+  border-radius: 20px;
+}
+div.zoom:hover img {
+  transform: scale(1.4);
+}
+div.items2 {
+  padding: 15px;
+  display: flex;
+}
+div.items3 {
+  width: 24%;
+  padding-left: 10px;
+  opacity: 0.4;
+}
+div.items3 img {
+  width: 100%;
+}
+div.items3:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.ject {
+  width: 50%;
+}
+div.product-infor {
+  width: 90%;
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-evenly;
+}
+div.ject p a {
+  border: 1px solid black;
+  padding: 3px;
+  text-decoration: none;
+  margin-right: 10px;
+  color: darkgray;
+  font-size: 20px;
+}
+div.ject p a:hover {
+  color: white;
+  background-color: dimgray;
+}
+.ject p {
+  font-size: 20px;
+  color: #787878;
+  font-weight: 700;
+}
+.cash {
+  display: flex;
+  margin: 20px;
+}
+
+@keyframes doimau1 {
+  0% {
+    background-color: rgb(252, 149, 149);
+  }
+  25% {
+    background-color: rgb(248, 160, 204);
+  }
+  50% {
+    background-color: rgb(125, 197, 255);
+  }
+  75% {
+    background-color: rgb(137, 250, 137);
+  }
+  100% {
+    background-color: rgb(243, 226, 130);
+  }
+}
+
+.cash-item {
+  margin-left: 10px;
+}
+.cash-item a {
+  text-decoration: none;
+  color: dimgray;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  animation: doimau1 1s ease infinite;
+}
+div.cash-item a:hover {
+  background-color: black;
+  color: white;
+}
+.angle {
+  text-align: center;
+  font-size: 23px;
+}
+div.angle a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: 0.3;
+}
+div.angle a:hover {
+  background: #adadad;
+  transition-duration: 0.3s;
+}
+
+.design {
+  display: flex;
+  justify-content: center;
+}
+.design h3 {
+  margin-left: 20px;
+}
+.design h3 a {
+  text-decoration: none;
+  color: darkslategray;
+}
+.design h3 a:first {
+  text-decoration: underline;
+}
+.description {
+  width: 80%;
+  margin: 10px auto;
+}
+.description img {
+  width: 100%;
+}
+.description p {
+  color: #787878;
+  font-size: 18px;
+  font-weight: 700;
+}
+.head {
+  text-align: center;
+  margin-top: 15px;
+}
+.collect {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.collect1 {
+  width: calc(24% - 25px);
+  margin-left: 25px;
+}
+.collect2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+.collect2 {
+  border-bottom: 1px solid darkslategrey;
+}
+.collect3 {
+  text-align: center;
+  padding-top: 10px;
+}
+.collect3 a {
+  color: black;
+  font-weight: 700;
+}
+.foot {
+  display: flex;
+  justify-content: space-evenly;
+
+  background-color: darkgray;
+}
+.col30 {
+  width: 20%;
+  white-space: normal;
+}
+.aman {
+  display: flex;
+  justify-content: center;
+  background-color: darkgray;
+}
+.aman .aman1 {
+  margin-right: 30px;
+}
+.aman .aman2 {
+  line-height: 2;
+}
+.card {
+  text-align: center;
+  font-size: 25px;
+  background-color: darkgray;
+}
+p#foot {
+  text-align: center;
+}
+
+.poster i {
+  font-size: 36px;
+}
+
+.poster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #eeeeee;
+  color: black;
+  height: 500px;
+  padding: 50px;
+}
+
+.delivery {
+  width: 30%;
+  padding: 40px;
+}
+.change {
+  width: 30%;
+  padding: 50px;
+}
+.material {
+  width: 30%;
+  padding: 40px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.information {
+  list-style-type: none;
+  display: inline;
+}
+.pay > ul > li {
+  padding-right: 40px;
+  list-style-type: none;
+}
+.pay i {
+  font-size: 36px;
+}
+.pay {
+  display: flex;
+  justify-content: center;
+  background-color: #eeeeee;
+  color: black;
+}
+.pay > p {
+  margin: 15px;
+}
+.copy {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+  height: 65px;
+  align-items: center;
+}
+#goTop i {
+  font-size: 60px;
+}
+#goBottom i {
+  font-size: 60px;
+}
+
+#goTop {
+  position: fixed;
+  right: 15px;
+  bottom: 90px;
+  z-index: 999;
+}
+#goBottom {
+  position: fixed;
+  right: 15px;
+  bottom: 25px;
+  z-index: 999;
+}
+.menu-ads {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#ads {
+  position: fixed;
+  left: 15px;
+  bottom: 20px;
+  z-index: 999;
+}
+#ads:hover .menu-ads > li {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  #div1 h1 {
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+  }
+  #div1 a {
+    font-size: 25px;
+    padding: 10px 0;
+  }
+
+  .top-nav-menu {
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+  .top-nav-menu li {
+    width: 20%;
+    margin: 10px;
+    font-size: 13px;
+  }
+  .top-nav-menu li a {
+    font-size: 16px;
+  }
+  div.product-infor {
+    display: block;
+    width: 99%;
+  }
+  .items {
+    width: 90%;
+    margin: 5px auto;
+  }
+
+  .ject {
+    width: 90%;
+    margin: 5px auto;
+  }
+  .ject h1 {
+    font-size: 30px;
+  }
+  .ject h2 {
+    font-size: 25px;
+  }
+  .ject p {
+    font-size: 14px;
+  }
+  .angle {
+    font-size: 15px;
+  }
+  .cash-item a {
+    font-size: 15px;
+  }
+  .design h3 {
+    font-size: 22px;
+  }
+  .description p {
+    font-size: 16px;
+  }
+  .head h1 {
+    font-size: 30px;
+  }
+  .collect {
+    margin: 20px 50px;
+  }
+  .collect1 {
+    margin: 0;
+    width: 100%;
+  }
+
+  .poster {
+    display: block;
+    padding: 10px 10px;
+    height: 100%;
+    font-size: 5px;
+  }
+  .poster i {
+    font-size: 15px;
+  }
+  .poster h1,
+  h3,
+  h5 {
+    font-size: 13px;
+  }
+
+  .delivery {
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+  }
+  .change {
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+  }
+  .material {
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .information p {
+    font-size: 9px;
+  }
+  .pay i {
+    font-size: 15px;
+  }
+  .menu-ads li a img {
+    width: 70%;
+  }
+  #goTop {
+    right: 5px;
+    bottom: 60px;
+  }
+  #goBottom {
+    right: 5px;
+  }
+  #goTop i {
+    font-size: 30px;
+  }
+  #goBottom i {
+    font-size: 30px;
+  }
+}
+
+/*ipad*/
+@media screen and (max-width: 900px) {
+  #div1 h1 {
+    font-size: 29px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+  }
+  #div1 a {
+    font-size: 35px;
+    padding: 10px 0;
+  }
+
+  .top-nav-menu {
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+  .top-nav-menu li {
+    width: 25%;
+    margin: 13px;
+    font-size: 20px;
+  }
+  .cash-item a {
+    font-size: 14px;
+  }
+  .collect {
+    margin: 20px 50px;
+  }
+  .collect1 {
+    margin: 0;
+    width: calc(49% - 30px);
+    margin-left: 30px;
+  }
+
+  .poster {
+    display: block;
+    padding: 20px 20px;
+    height: 100%;
+    font-size: 15px;
+  }
+  .poster i {
+    font-size: 25px;
+  }
+  .poster h1,
+  h3,
+  h5 {
+    font-size: 20px;
+  }
+  .delivery {
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+  }
+  .change {
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+  }
+  .material {
+    text-align: center;
+    width: 99%;
+    padding: 10px;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .pay i {
+    font-size: 20px;
+  }
+  .menu-ads li a img {
+    width: 90%;
+  }
+  #goTop {
+    right: 15px;
+    bottom: 80px;
+  }
+  #goBottom {
+    right: 15px;
+  }
+  #goTop i {
+    font-size: 50px;
+  }
+  #goBottom i {
+    font-size: 50px;
+  }
+}

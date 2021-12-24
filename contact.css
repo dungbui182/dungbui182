@@ -1,0 +1,217 @@
+body {
+  background-color: #fdf9f9;
+  width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+}
+#div1 {
+  background-color: black;
+  color: #e7e7e7;
+  box-shadow: #8c8181 0px 2px 8px 1px;
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  z-index: 999;
+}
+#div1 h3 {
+  margin: 0;
+  text-align: center;
+}
+.contactus h3 {
+  font-weight: 600;
+  font-size: 45px;
+  text-shadow: #8e7979 3px 3px 5px;
+  color: hsl(300, 45%, 33%);
+  text-align: center;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif, "arial";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+}
+
+.row {
+  justify-content: center;
+}
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: rgb(112, 112, 138) 0px 7px 29px 5px;
+}
+.styled-input input {
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .styled-input {
+    width: 100%;
+  }
+}
+
+.styled-input.wide {
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  float: right;
+  padding: 7px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  background-color: #4b8cfb;
+  color: white;
+  font-size: 18px;
+}
+
+.submit-btn:hover {
+  background-color: #2d2d2d;
+}
+
+@media (max-width: 768px) {
+  .submit-btn {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+
+.contactus {
+  display: flex;
+}
+.contactus-item {
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 50%;
+  margin-top: 70px;
+}
+.location {
+  margin: 10px 20px;
+}
+
+.aboutus {
+  width: 80%;
+  margin: 40px auto;
+}
+.descript h2,
+p {
+  text-align: center;
+}
+.descript p {
+  font-size: 19px;
+}
+
+.imginsta {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  justify-content: center;
+  width: 85%;
+  margin-bottom: 50px;
+}
+.insta {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 23%;
+}
+.insta img {
+  width: 100%;
+}
+
+.infor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.infor-item {
+  border: 1px solid rgb(235, 221, 221);
+  width: 22%;
+  margin: 40px 40px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: rgb(88, 88, 103) 0px 7px 29px 10px;
+  background-color: white;
+}
+.infor-item img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.copy {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  margin: 0;
+  height: 65px;
+  align-items: center;
+}
+.poster {
+  margin: 40px 43%;
+  box-shadow: rgb(88, 88, 103) 0px 7px 29px 10px;
+  border-radius: 20px;
+}
+
+.gohome img {
+  border-radius: 20px;
+}
+
+#goTop {
+  color: black;
+  position: fixed;
+  right: 15px;
+  bottom: 90px;
+  z-index: 999;
+}
+#goBottom {
+  color: black;
+  position: fixed;
+  right: 15px;
+  bottom: 25px;
+  z-index: 999;
+}
+.menu-ads {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#ads {
+  position: fixed;
+  left: 15px;
+  bottom: 20px;
+  z-index: 999;
+}
+#ads:hover .menu-ads > li {
+  transform: scale(1.1);
+}
